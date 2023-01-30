@@ -282,7 +282,19 @@ margin-bottom: 50px;
     font-family: 'Merienda', cursive;
 }
 
+/* preloader */
 
+#preloader {
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    background-image: url(images/loader.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30%;
+}
 
 
 
