@@ -138,6 +138,9 @@ margin-bottom: 50px;
     padding: 3px 15px;
     font-weight: bold;
 }
+.about-me-col2 p .A {
+    background-color: rgba(123, 153, 164, 0.774);
+}
 .about-me-col2 p .B {
     background-color: rgb(186, 225, 166);
 }
@@ -149,6 +152,12 @@ margin-bottom: 50px;
 }
 .about-me-col2 p .E {
     background-color: rgb(233, 248, 173);
+}
+.about-me-col2 p .F {
+    background-color: rgba(167, 182, 219, 0.831);
+}
+.about-me-col2 p .G {
+    background-color: rgba(230, 159, 159, 0.642);
 }
 .about-me-col2 p {
     margin-top: 30px;
