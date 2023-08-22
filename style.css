@@ -255,7 +255,7 @@ margin-bottom: 50px;
 #contact .social-icon a i {
    text-decoration: none;
    color: white;
-   transition: 0.5;
+   transition: 0.5s;
 }
 #contact .social-icon a i:hover {
     font-size: 52px;
