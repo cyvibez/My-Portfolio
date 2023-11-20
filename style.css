@@ -81,7 +81,7 @@
     font-size: 15px;
     margin-bottom: 40px;
 }
- .sayHi {
+ .resume {
     padding: 10px 40px;
     background-color: transparent;
     border: 3px solid white;
@@ -96,7 +96,7 @@
     text-decoration: none;
 }
 
-.sayHi:hover {
+.resume:hover {
     padding: 10px 50px;
     color: rgb(114, 114, 114);
     border: 3px solid rgb(114, 114, 114);
@@ -326,6 +326,7 @@
     /* font-family: 'Lato', sans-serif; */
     background-color: rgba(0, 0, 0, 0.95);
     padding: 10px 0;
+    
 }
 #footer hr {
     color: white;
