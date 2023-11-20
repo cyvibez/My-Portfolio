@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet"> -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
@@ -58,12 +58,15 @@
     <section id="banner">
       <div class="banner_content text-center">
         <div class="banner_text" data-aos="fade-down" data-aos-duration="1500">
-          <h5>Hello<span>&#128075</span>, I'm</h5>
-          <h1 data-aos="fade-down">Olamilekan</h1>
-          <h6>I'm a Frontend Developer <span>&#128522</span></h6>
+          <div class="banner-img" data-aos="fade-down">
+            <img class="mypic img-fluid" src="images/mypic.jpg" alt="Picture of Olamilekan">
+          </div>
+          <h5 data-aos="fade-down">Hi<span>&#128075</span>, I'm Olamilekan</h5>
+          <!-- <h1 data-aos="fade-down">Olamilekan</h1> -->
+          <h6>Frontend Developer <span>&#128522</span></h6>
        </div>
        <a href="#contact" type="sayhi"><button class="sayHi">Say Hi</button></a>
-       <img src="images/wave1.png" alt="">
+       <!-- <img src="images/wave1.png" alt=""> -->
       </div>
     </section>
 
@@ -71,16 +74,29 @@
 
     <section id="about_me">
       <div class="container">
+
         <div class="row about_me_row justify-content-center">
-          <div class="col-lg-4 about-me-col1 text-center" data-aos="fade-right">
-            <!-- <div class="side_line"></div> -->
-            <img class="mypic img-fluid" src="images/mypic.jpg" alt="Picture of Olamilekan">
-          </div>
-          <div class="col-lg-6 about-me-col2" data-aos="fade-left">
-            <h4>About Me</h4>
-            <p>I'm an innovative Frontend Developer with extensive experience in <span class="one A">HTML5</span> <span class="one B">CSS</span>  <span class="one C">Bootstrap</span> <span class="one D">Tailwind</span> <span class="one E">Javascript</span>  <span class="one C">Material UI</span> & <span class="one B">ReactJS</span></p>
-            <p>I'm passionate about web development and  also dedicated to staying up-to-date with the latest trends and technologies in frontend development. I'm on the lookout for a Frontend Internship to help me gather experience from real projects and sharpen my programming skills</p>
-            <p><a href="https://drive.google.com/file/d/1uw2ewm96i1vtSi329guOGd8DIWrfAvAm/view" target="_blank">Resume</a></p>
+          <div class="col-lg-6 about-me-col2" >
+            <div class="header text-center" data-aos="fade-down">
+              <h1>About Me</h1>
+              <!-- <span class="straight-line"></span> -->
+            </div>
+            <div data-aos="fade-left">
+              <p>I'm an innovative Frontend Developer who is passionate about web development and also dedicated to staying up-to-date with the latest trends and technologies in web developement.</p>
+              <p>I have vast knowledge with extensive experience in 
+                <span class="one A">HTML5</span> 
+                <span class="one B">CSS</span>  
+                <span class="one C">Bootstrap</span> 
+                <span class="one D">Tailwind</span> 
+                <span class="one E">Javascript</span>  
+                <span class="one C">Material UI</span> 
+                <span class="one D">Tailwind</span> 
+                <span class="one B">ReactJs</span>  
+                <span class="one D">NextJs</span>
+              </p>
+
+              <!-- <p><a href="https://drive.google.com/file/d/1uw2ewm96i1vtSi329guOGd8DIWrfAvAm/view" target="_blank">Resume</a></p> -->
+            </div>
           </div>
         </div> 
         
@@ -91,41 +107,41 @@
     <!-- projects -->
     
     <section id="projects" data-aos-once="true">
-      <img src="images/wave3.jpg" alt="">
-      <div class="container projects text-center" data-aos="fade-down" data-aos-duration="1500" data-aos-once="true">
+      <!-- <img src="images/wave3.jpg" alt=""> -->
+      <div class="container projects text-center" data-aos="fade-down" data-aos-duration="1500" >
           <h1>Recent Projects</h1>
-          <span class="straight-line"></span>
-        <div class="row  project-content justify-content-center">
-          <div class="col-md-4 project-items" data-aos="fade-right" data-aos-once="true">
-            <img src="images/aomi.jpg" alt="Image of Aomi Match website">
-            <a href="https://aomi.netlify.app/" target="_blank">
-            <h3>Aomi Match</h3>
-            <p>This is a match-making/dating website. This website was built with custom CSS and Javascript</p>
-          </a>
-        </div>
-          <div class="col-md-4 project-items" data-aos="fade-left" data-aos-once="true">
+          <!-- <span class="straight-line"></span> -->
+        <div class="row  project-content one justify-content-center">
+          <div class="col-md-4 project-items" data-aos="fade-right" >
+            <img src="images/cotrem.jpg" alt="Image of Cotrem website">
+            <a href="https://cotrem.vercel.app/" target="_blank">
+            <h3>Cotrem</h3>
+            <p>This is a mortgage website built for property listing. This website is build using React and custom CSS</p>
+            </a>
+          </div>
+          <div class="col-md-4 project-items" data-aos="fade-left" >
             <img src="images/jeez.jpg" alt="Image of Jeez website">
             <a href="https://jeezphoto.netlify.app/" target="_blank">
             <h3>Jeez</h3>
             <p>This is an online photo gallery. This wesbite is built using custom CSS and Javascript</p>
-          </a>
+            </a>
           </div>
         </div>
 
-        <div class="row  project-content justify-content-center" data-aos-once="true">
-          <div class="col-md-4 project-items" data-aos="fade-right" data-aos-once="true">
+        <div class="row  project-content justify-content-center" >
+          <div class="col-md-4 project-items"  data-aos="fade-left" >
+            <img src="images/aomi.jpg" alt="Image of Aomi Match website">
+            <a href="https://aomi.netlify.app/" target="_blank">
+            <h3>Aomi Match</h3>
+            <p>This is a match-making/dating website. This website was built with HTML, custom CSS and Javascript</p>
+            </a>
+          </div>
+          <div class="col-md-4 project-items" data-aos="fade-right" >
             <img src="images/portfolio.jpg" alt="Image of Olamilekan Akanni's Portfolio">
             <a href="https://olamilekanakanni.netlify.app/">
             <h3>My Portfolio</h3>
-            <p>This is my first portfolio website, built using Bootstrap</p>
-          </a>
-        </div>
-          <div class="col-md-4 project-items"  data-aos="fade-left" data-aos-once="true">
-            <img src="images/foorly.jpg" alt="Image of Foorly website">
-            <a href="https://foorly.netlify.app/" target="_blank">
-            <h3>Foorly</h3>
-            <p>This is an online learning wesbite for teaching tech to kids using innovative games and cartoon characters. This wesbite is built using custom CSS and Javascript</p>
-          </a>
+            <p>This is my portfolio website, built using HTML, CSS, Bootstrap and Javascript</p>
+            </a>
           </div>
         </div>
       
@@ -139,11 +155,12 @@
         <div class="row contact-text" data-aos="flip-down">
           <h1 class="chat" >Wanna chat?</h1>
         </div>
-        <div class="row social-icon" data-aos="zoom-out">
+        <div class="row social-icon">
             <a href="https://mailto:cyprusakanni@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
             <a href="https://wa.me/+2348105949047" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>   
             <a href="https://www.linkedin.com/in/olamilekan-akanni-64740696/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://www.twitter.com/cyvibez" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <!-- <a href="https://www.twitter.com/cyvibez" target="_blank"><i class="fa-brands fa-twitter"></i></a> -->
+            <a href="https://github.com/cyvibez" target="_blank"><i class="fa-brands fa-github"></i></a>
           </div>
         </div>
       <!-- <i class="fa-solid fa-comment"></i> -->

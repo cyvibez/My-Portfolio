@@ -1,21 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 
 * {
     padding: 0;
     margin: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* navbar */
 
 #navbar {
-    font-family: 'Lato', sans-serif;
+    /* font-family: 'Lato', sans-serif; */
     position: sticky;
     z-index: 10;
     top: 0;
 }
 .navbar {
-    background:  -webkit-linear-gradient(left, rgba(102,149,204,255), rgba(9,19,44,255));
+    /* background:  -webkit-linear-gradient(left, rgba(102,149,204,255), rgba(9,19,44,255)); */
+    /* background-color: rgba(0, 0, 0, 0.95); */
+    background-color: black;
 }
 #navbarNav {
     justify-content: end;
@@ -33,7 +36,7 @@
    transition: 0.5s;
 }
 #navbarNav ul li a:hover {
-    color: rgb(170, 192, 235);
+    color: rgb(114, 114, 114);
     text-decoration: none;
     /* border-bottom: 3px solid white;
     border-radius: 50%; */
@@ -53,13 +56,15 @@
 /* banner */
 
 #banner {
-    background:  -webkit-linear-gradient(left, rgba(102,149,204,255), rgba(9,19,44,255));
-    padding: 50px 0 0px;
-    font-family: 'Lato', sans-serif;
+    /* background:  -webkit-linear-gradient(left, rgba(102,149,204,255), rgba(9,19,44,255)); */
+    background-color: rgba(0, 0, 0, 0.95);
+    /* background-color: black; */
+    padding: 50px 0;
+    /* font-family: 'Lato', sans-serif; */
 }
 
 #banner .banner_content {
-    margin: 100px auto 50px;
+    margin: 20px auto 0px;
     /* color: white; */
     /* text-align: center; */
 }
@@ -68,17 +73,12 @@
     padding: 20px 0;
 }
 .banner_text h5 {
-    font-size: 30px;
+    font-size: 25px;
     margin-bottom: 15px;
 }
-.banner_text h1 {
-    font-size: 65px;
-    margin-bottom: 25px;
-    font-family: 'Lato', sans-serif;
-    /* font-weight: 600; */
-}
+
 .banner_text h6 {
-    font-size: 18px;
+    font-size: 15px;
     margin-bottom: 40px;
 }
  .sayHi {
@@ -98,35 +98,62 @@
 
 .sayHi:hover {
     padding: 10px 50px;
-    color: white;
+    color: rgb(114, 114, 114);
+    border: 3px solid rgb(114, 114, 114);
+    /* color: white; */
 }
 .banner_content img {
    width: 100%;
 }
 
-/* about me */
-
-#about_me {
-    margin: 50px 0 60px;
-    font-family: 'Lato', sans-serif;
-}
-
-.about_me_row img {
+.banner-img img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
     margin-top: 30px;
-margin-bottom: 50px;
+    margin-bottom: 50px;
+    object-fit: cover;
     /* margin: 20px 0 50px; */
     /* margin-top: -250px; */
 }
+
+
+/* about me */
+
+#about_me {
+    padding: 20px 0 50px;
+    /* font-family: 'Lato', sans-serif; */
+    color: white;
+    background-color: rgba(0, 0, 0, 0.95);
+}
+
+#about_me .header h1 {
+    color: white;
+    font-size: 25px;
+}
+#about_me .header h1::after {
+    display: block;
+    content: ' ';
+    background-color: white;
+    width: 70px;
+    height: 5px;
+    margin: 5px auto;
+}
+/* .header h1 .straight-line {
+    display: block;
+    width: 200px;
+    height: 5px;
+    background-color: white;
+    margin: 15px auto;
+} */
+
 .about-me-col2 h4 {
-    font-size: 35px;
+    font-size: 20px;
     margin-bottom: 20px;
 }
 .about-me-col2 p {
-    font-size: 18px;
-    line-height: 33px;
+    font-size: 15px;
+    line-height: 30px;
     text-align: justify;
 }
 /* .about-me-col1 {
@@ -137,6 +164,7 @@ margin-bottom: 50px;
     border-radius: 5px;
     padding: 3px 15px;
     font-weight: bold;
+    color: black;
 }
 .about-me-col2 p .A {
     background-color: rgba(123, 153, 164, 0.774);
@@ -180,9 +208,8 @@ margin-bottom: 50px;
 /* projects */
 
 #projects {
-    font-family: 'Lato', sans-serif;
-    background:  -webkit-linear-gradient(left, rgba(102,149,204,255), rgba(9,19,44,255));
-    padding-bottom: 30px;
+    background-color: rgba(0, 0, 0, 0.95);
+    padding: 100px 0 50;
 }
 #projects img {
     width: 100%;
@@ -190,45 +217,63 @@ margin-bottom: 50px;
 }
 .projects h1 {
     color: white;
+    padding-top: 100px;
+    font-size: 25px;
 }
 .projects h1::after {
     display: block;
     content: ' ';
     background-color: white;
-    width: 130px;
-    height: 10px;
+    width: 100px;
+    height: 5px;
     margin: 5px auto;
 }
-.projects .straight-line {
+
+.projects .one {
+    margin-top: 50px;
+}
+/* .projects .straight-line {
     display: block;
     width: 200px;
     height: 5px;
     background-color: white;
     margin: -15px auto 30px;
-}
+} */
 .project-content .project-items {
     padding: 20px 20px;
     margin: 20px 30px;
-    background:  -webkit-linear-gradient(left, rgba(9,19,44,255), rgba(102,149,204,255));
+    background-color: black;
+    color: white;
     border: none;
     border-radius: 10px;
      width: 300px; 
 }
+
+.project-content .project-items h3 {
+    font-size: 20px;
+    /* color: rgb(118, 41, 41); */
+}
+
+.project-content .project-items p {
+    font-size: 15px;
+}
+
 .project-content .project-items a {
     color: white;
     text-decoration: none;
     transition: 0.5s;
 }
 .project-content .project-items a:hover {
-    color: rgb(170, 192, 235);
+    color: rgb(114, 114, 114);
+
 }
 .project-items img {
     border-radius: 5px;
     border: none;
 }
-.project-content .project-items:hover {
+/* .project-content .project-items:hover {
     margin: 30px 0;
-}
+} */
 .project-items a p {
     font-size: 14px;
 }
@@ -236,9 +281,8 @@ margin-bottom: 50px;
 /* contact */
 
 #contact {
-    background:  -webkit-linear-gradient(left, rgba(102,149,204,255), rgba(9,19,44,255));
+    background-color: rgba(0, 0, 0, 0.95);
     padding: 60px 0 80px;
-    font-family: 'Lato', sans-serif;
 }
 .contact-text .chat {
     color: white;
@@ -249,7 +293,10 @@ margin-bottom: 50px;
 #contact .social-icon {
     margin-top: 20px;
     display: inline;
-    font-size: 35px;
+    font-size: 25px;
+    width: 200px;
+    height: 60px;
+    /* border: 2px solid red; */
 }
 
 #contact .social-icon a i {
@@ -258,7 +305,10 @@ margin-bottom: 50px;
    transition: 0.5s;
 }
 #contact .social-icon a i:hover {
-    font-size: 52px;
+    font-size: 30px;
+    color: rgb(114, 114, 114);
+
+
  }
 
 /* #contact  .fa-comment {
@@ -273,8 +323,8 @@ margin-bottom: 50px;
 /* footer */
 
 #footer {
-    font-family: 'Lato', sans-serif;
-    background:  -webkit-linear-gradient(left, rgba(102,149,204,255), rgba(9,19,44,255));
+    /* font-family: 'Lato', sans-serif; */
+    background-color: rgba(0, 0, 0, 0.95);
     padding: 10px 0;
 }
 #footer hr {
